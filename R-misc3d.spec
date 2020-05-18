@@ -4,16 +4,12 @@
 #
 Name     : R-misc3d
 Version  : 0.8.4
-Release  : 15
+Release  : 16
 URL      : https://cran.r-project.org/src/contrib/misc3d_0.8-4.tar.gz
 Source0  : https://cran.r-project.org/src/contrib/misc3d_0.8-4.tar.gz
 Summary  : Miscellaneous 3D Plots
 Group    : Development/Tools
 License  : GPL-2.0
-Requires: R-rgl
-Requires: R-scatterplot3d
-BuildRequires : R-rgl
-BuildRequires : R-scatterplot3d
 BuildRequires : buildreq-R
 
 %description
@@ -21,21 +17,22 @@ isosurfaces.
 
 %prep
 %setup -q -c -n misc3d
+cd %{_builddir}/misc3d
 
 %build
 export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1578178069
+export SOURCE_DATE_EPOCH=1589777934
 
 %install
-export SOURCE_DATE_EPOCH=1578178069
+export SOURCE_DATE_EPOCH=1589777934
 rm -rf %{buildroot}
 export LANG=C.UTF-8
 export CFLAGS="$CFLAGS -O3 -flto -fno-semantic-interposition "
-export FCFLAGS="$CFLAGS -O3 -flto -fno-semantic-interposition "
-export FFLAGS="$CFLAGS -O3 -flto -fno-semantic-interposition "
+export FCFLAGS="$FFLAGS -O3 -flto -fno-semantic-interposition "
+export FFLAGS="$FFLAGS -O3 -flto -fno-semantic-interposition "
 export CXXFLAGS="$CXXFLAGS -O3 -flto -fno-semantic-interposition "
 export AR=gcc-ar
 export RANLIB=gcc-ranlib
