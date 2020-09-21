@@ -1,5 +1,5 @@
 PKG_NAME := R-misc3d
-URL = https://cran.r-project.org/src/contrib/misc3d_0.8-4.tar.gz
+URL = https://cran.r-project.org/src/contrib/misc3d_0.9-0.tar.gz
 ARCHIVES = 
 
 include ../common/Makefile.common
