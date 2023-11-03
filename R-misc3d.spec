@@ -4,7 +4,7 @@
 #
 Name     : R-misc3d
 Version  : 0.9.1
-Release  : 39
+Release  : 40
 URL      : https://cran.r-project.org/src/contrib/misc3d_0.9-1.tar.gz
 Source0  : https://cran.r-project.org/src/contrib/misc3d_0.9-1.tar.gz
 Summary  : Miscellaneous 3D Plots
